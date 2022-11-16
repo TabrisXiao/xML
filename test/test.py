@@ -1,2 +1,8 @@
+from frame.module import fullyConnected
 
-from frame.module.convolution import conv2D
+layer = fullyConnected(
+    name = "testLayer",
+    inShape = 3,
+    outShape = 5
+)
+layer.build()
